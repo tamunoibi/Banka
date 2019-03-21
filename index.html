@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Banka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="UI/css/main.css">
+  
+</head>
+<body>
+  <!-- Flex Container -->
+  <div class="flex-container position-90 width-100">
+    <!--
+      ======================================= Header
+    -->
+    <section class="height-auto width-100">
+      <ul class="navbar" id="mynavBar">
+        <li class="nav-item pos-rel-hide rippler">Get Started</li>
+        <li class="nav-item pos-rel-hide rippler">Nearby ATM</li>
+        <li class="nav-item pos-rel-hide rippler">Branches</li>
+        <li class="nav-item pos-rel-hide rippler">Login</li>
+        <li><a href="javascript:void(0);" class="icon" onclick="ToggleDisplayNav()">
+          <i class="hamburger">&#9776;</i></a>
+        </li>
+      </ul>
+      
+    </section>
+    <!--
+      ======================================= Main
+    -->
+    <!-- (Single Column) -->
+    <section class="height-auto width-100">
+      <div class="card-div">
+          <ul class="card">
+              <li class="card-item item6"></li>
+              <li class="card-item item5"></li>
+              <li class="card-item item4"></li>
+              <li class="card-item item3"></li>
+              <li class="card-item item2"></li>
+              <li class="card-item item1"></li>
+          </ul> 
+      </div>
+    
+      <img src="/UI/images/white.jpg" alt="akjd" class="width-100 height-auto">
+    </section>
+    <!-- (2 Columns) -->
+    <section class="width-100 sm-width-50 ta-width-50">
+      <figure>
+        <!-- <img src="https://i.imgur.com/rbcoO4a.jpg"> -->
+        <img src="/UI/images/chart.jpg" alt="akjd" class="width-100 height-auto">
+      </figure>
+    </section>
+    <section class="width-100 bg-green sm-width-50 ta-width-50">
+      <div><h2>Main Content Right (2 colums)</h2></div>
+    </section>
+
+    <!-- (3 Columns) -->
+    <section class="width-100 ta-width-33"><img src="/UI/images/card.png" alt="akjd" class="width-100 height-auto"></section>
+    <section class="width-100 ta-width-33">Begin Banking</section>
+    <section class="width-100 ta-width-33"><img src="/UI/images/chart.jpg" alt="akjd" class="width-100 height-auto"></section>
+    <!--
+      ======================================= Footer
+    -->
+    <section class="bg-info height-auto width-100 height-8">Footer</section>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

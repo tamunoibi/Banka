@@ -1,0 +1,287 @@
+/* 
+==================================> External Styles
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import "animateimage.css";
+ /* 
+==================================> Remove Defaults
+ */
+ /* ul */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 
+==================================> Components
+ */
+           /* Body */
+body {
+    background-color: #fff;
+    color: #1e394e;
+    font-size: 14px;
+    font-family: "Nunito","sans-serif";
+    font-weight: 400;
+    margin: 0; 
+
+}
+         /* Flex Container */
+.flex-container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+}
+         /* Nav Bar */
+.navbar {
+  overflow: hidden;
+  /* background-color: #333; */
+}
+.navbar .nav-item {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar .nav-item:hover {
+  color: #FCC604;
+}
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .nav-item:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.navbar.responsive .nav-item {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+        /* Harmburger Icon */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+        /* buttons */
+.button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+.button:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+.button.button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  /* background-color:	#FCC604; */
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+.button.button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+}
+.button.button-primary:hover,
+.button.button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+}
+.button.button-disabled {
+  opacity: 0.5;
+  background-color: #33C3F0;
+  color: #FFF;
+  cursor:not-allowed;
+}
+
+/* 
+==================================> Color Utililties
+Contains:
+1) Background colors as bg-*
+2) Text colors as tex-*
+ */
+ /* For Backgrounds */
+.bg-white {
+  background-color: #fff;
+}
+.bg-yellow {
+  background-color: #FCC604;
+}
+.bg-red {
+  background-color: #EB1211;
+}
+.bg-light {
+  background-color: #f8f9fa;
+}
+.bg-danger {
+  background-color: #dc3545;
+}
+.bg-info   {
+  background-color: #17a2b8;
+}
+.bg-magneta   {
+  background-color: magenta;
+}
+.bg-green   {
+  background-color: green;
+}
+/* For Texts */
+.text-gray {
+  color: #1e394e;
+}
+
+/* 
+==================================> Text Utililties(font, padding)
+ */
+ p-4 {
+   padding: .4em;
+ }
+
+/* 
+==================================> Length Utililties
+ */
+ /* Width */
+.width-100 {
+  width: 100%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-60px {
+  width: 60px;
+}
+/* Height */
+.height-auto {
+  height: auto;
+}
+.height-8 {
+  height: 8em;
+}
+
+/* 
+==================================> Positioning Utililties
+ */
+ .position-90 {
+   width: 90%;
+   margin: 0 auto;
+ }
+.float-r {
+    position: relative;
+    float: right;
+ }
+ .block {
+    display: block;
+ }
+ 
+/* 
+==================================> Animation Utilities
+ */
+     /* Ripple Effect */
+.pos-rel-hide {
+  position: relative;
+  overflow: hidden;
+}
+
+.pos-rel-hide .ripple{
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple{
+  to{
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* 
+==================================> Responsive Design
+ */
+ /* Small screens */
+@media all and (min-width: 500px) {
+  /* Flex Container */
+  .flex-container {
+    /* On small screens, don't use column direction, rather use row direction */
+    flex-direction: row;
+  }
+  /* Width Utilities */
+  .sm-width-50 {
+    width: 50%;
+  }
+
+}
+
+/* Desktop Screens */
+@media all and (min-width: 800px) {
+  /* Flex container */
+  .flex-container {
+    /* On tablets, spacee the items evenly around */
+    justify-content: space-around;
+  }
+  /* Width Utilities */
+  .ta-width-50 {
+    width: 50%;
+  }
+  .ta-width-33 {
+    width: 33.33%;
+  }
+  
+}

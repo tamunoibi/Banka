@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Banka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+  
+</head>
+<body>
+  <!-- Flex Container -->
+  <div class="flex-container position-90 width-100">
+    <!--
+      ======================================= Header
+    -->
+    <section class="height-auto width-100">
+      <ul class="navbar" id="mynavBar">
+        <li class="nav-item pos-rel-hide rippler"><a href="/">Home</a></li>
+        <li class="nav-item pos-rel-hide rippler">Nearby ATM</li>
+        <li class="nav-item pos-rel-hide rippler">Branches</li>
+        <li class="nav-item pos-rel-hide rippler float-l text-info"><a href="">Get Started</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="ToggleDisplayNav()">
+          <i class="hamburger">&#9776;</i></a>
+        </li>
+      </ul>
+      
+    </section>
+    <!--
+      ======================================= Login form
+    -->
+    <section class="height-auto width-100">
+      <div class="my-10">
+        <form action="" method="" class="border-light p-5 shadow mb-4 bg-white ">
+          <!-- Heading -->
+          <p class="h4 mb-4 text-uppercase text-center font-weight-bolder">Login</p>
+          <!-- First Name -->
+          <label class="font-weight-bold bg-yellow form-label">Email</label>
+          <input type="text" class="form-control mb-4 bg-input width-100" name="first_name" placeholder="First Name" required>
+          <!-- Password -->
+          <label class="font-weight-bold text-center form-label">Password</label>
+          <input type="password" class="form-control mb-4 bg-input width-100" placeholder="Password" name="password" required>
+          <!-- Submit button -->
+          <button class="button button-info my-4  width-100 pos-rel-hide rippler" type="submit">Login</button>
+        </form>
+      </div>
+      
+    </section>
+    <!--
+      ======================================= Footer
+    -->
+    <section class="height-auto width-100 height-8">Footer</section>
+  </div>
+</body>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Banka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <!-- Flex Container -->
+  <div class="flex-container width-100 bg-check">
+    <!--
+      ======================================= Header
+    -->
+    <header class="height-auto width-100 bg-white">
+      <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
+        <a href="/UI/user.html" class="pos-rel-hide rippler text-info border-yellow">Transactions</a>
+        <a href="/UI/create-account.html" class="pos-rel-hide rippler"><button class="button button-info " title="Create a new Account"><i class="fa fa-plus">Create account</i></button></a>
+        <a class="icon" onclick="displayToggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="../index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
+        <a href="/UI/profile.html" class="float-r cusor">
+            <i><img class="gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
+        </a>
+
+      </div>
+    </header>
+
+    <!--
+      ======================================= Transactions User
+    -->
+    <section class="container min-height">
+      <form action="">
+        <input type="text" class="form-control placeholder-muted mt-4 ml-1 border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account name, account number or amount">
+      </form>
+      
+      <p class="border-blue text-size-16 ">Transactions by <span class="shadow">0107900456 [PRAISE BROWN]</span></p>
+      <div class="bg-white min-width-big shadow-light">
+        <!-- <h6 class="">3 Transaction(s)</h6> -->
+        
+        <table class="table width-100">
+          <thead>
+            <tr class="bg-light-blue text-left">
+              <th>Account Name</th>
+              <th>Account Number</th>
+              <th>Deposit</th>
+              <th>Withdrawal</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Anna Paul</td>
+              <td>010760089</td>
+              <td></td>
+              <td class="text-red"># 60,000</td>
+              <td>25-Mar-19</td>
+            </tr>
+            <tr>
+              <td>Debbie Jos</td>
+              <td>1098764532</td>
+              <td class="text-green"># 50,000</td>
+              <td></td>
+              <td>25-Mar-19</td>
+            </tr>
+            <tr>
+              <td>Sussan Saul</td>
+              <td>1098704532</td>
+              <td></td>
+              <td class="text-red"># 90,000</td>
+              <td>25-Jan-19</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+    </section>
+  
+    <!--
+      ======================================= Footer
+    -->
+    <footer class="height-auto width-100 height-70 text-center">Andela &#169;2019</footer>
+  </div>
+</body>
+<script src="js/main.js"></script>
+</html>

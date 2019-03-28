@@ -41,9 +41,10 @@ body {
     font-family: "Nunito","sans-serif";
     font-weight: 400;
     margin: 0; 
-
+    letter-spacing: 0.4px;
+    line-height: 1.5;
 }
-         /* Flex Container */
+     /* Flex Container */
 .flex-container {
     display:flex;
     flex-direction: column;
@@ -51,6 +52,21 @@ body {
     justify-content: space-around;
     align-content: stretch;
     align-items: stretch;
+    /* min-width: 185px; */
+}
+    /* Container */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1230px;
+}
+.profile-card {
+  /* display: flex; */
+  width: 625px;
+  height: 500px;
+  padding: 19px 27px;
 }
 
         /* Harmburger Icon */
@@ -71,12 +87,108 @@ body {
 }
       /* Form */
 .form-label {
-      display: block;
-    text-align: center;
+    display: block;
 }
 .form-control {
     display: block;
-    background-color:#E9EFFD;
+    /* background-color:#E9EFFD; */
+    border: 1px solid #CFD7E6;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(207,215,230,.4);
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 34px;
+}
+      /* Tables */
+.table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    padding: 8px; 
+    vertical-align: top;
+    height: 60px;
+    /* border-top: 1px solid #ddd; */
+
+    border-bottom: 1px solid rgb(245, 245, 245);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(245, 245, 245);
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+}
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+table>tbody>tr:hover {
+  background-color: rgb(238, 240, 252);
+}
+        /* Links */
+.link {
+  color: #4990E2;   
+}
+.link:hover {
+  cursor: pointer;  
+}
+/* Text title */
+.text-title {
+  font-size: 16px;
+  line-height: 21px;
+  color: #212b36;
+}
+
+     /* Border */
+.border-yellow {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #FCC604;
+    
+}
+.border-blue {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(87, 106, 230);
+  border-bottom-color: #676AE6;
+    
+}
+ .border-light {
+   /* border-bottom-width: 1px solid #f8f9fa; */
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(87, 106, 230);
+  border-bottom-color: #dee2e6;
+ }
+ .border-none {
+   border: none;
+ }
+
+
+  .overflow-none {
+  overflow-x: auto;
+  }
+
+.gravatar {
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%
+}
+.big-gravatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%
 }
 
         /* buttons */
@@ -107,9 +219,8 @@ body {
 .button.button-primary {
   color: #FFF;
   background-color: #33C3F0;
-  /* background-color:	#FCC604; */
   border-color: #33C3F0; }
-.button.button-primary:hover,
+.button.button-primary:hover,t
 .button.button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
@@ -120,6 +231,16 @@ body {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB;
+}
+.button.button-light:hover,
+.button.button-light:focus {
+  border-color: #FFF;
+  background-color: #FCC604;
+  opacity: 0.911;
+  color: #FFF;
+  /* color: #FCC604; */
+  /* background-color: #1EAEDB; */
+  /* border-color: #1EAEDB; */
 }
 .button.button-disabled {
   opacity: 0.5;
@@ -140,6 +261,19 @@ body {
   opacity: 1;
   color: #FFF;
 }
+.button.button-save {
+  border-color: #FFF;
+  background-color: #676AE6;
+  opacity: 0.911;
+  color: #FFF;
+}
+.button.button-save:hover,
+.button.button-primary:focus {
+  border-color: #FFF;
+  background-color: #676AE6;
+  opacity: 1;
+  color: #FFF;
+}
 
 /* 
 ==================================> Color Utililties
@@ -148,8 +282,18 @@ Contains:
 2) Text colors as tex-*
  */
  /* For Backgrounds */
+.bg-input {
+  background-color: #E9EFFD;
+}
+.bg-input:focus {
+  background-color: #fff;
+}
 .bg-white {
   background-color: #fff;
+}
+
+.bg-light-blue {
+  background-color: rgb(250, 252, 255);
 }
 .bg-yellow-light {
   background-color: #FCC604;
@@ -169,20 +313,31 @@ Contains:
 .bg-danger {
   background-color: #dc3545;
 }
-.bg-magneta   {
-  background-color: magenta;
+.bg-check   {
+  background-color: rgb(244, 246, 248);
+}
+.bg-gray   {
+  background-color: #FCFCFC;
 }
 .bg-green   {
   background-color: green;
 }
-/* For Texts */
+/* For Text Colors */
 .text-gray {
   color: #1e394e;
 }
 .text-info {
   color: #FCC604;
  }
-
+.text-link {
+  color: #1EAEDB;
+ }
+.text-green {
+  color: #4CB786;
+}
+.text-red {
+  color: 	#C17372;
+}
 /* 
 ==================================> Typography Utililties(font, padding, margin, shadow)
  */
@@ -200,6 +355,12 @@ Contains:
 .mb-4 {
   margin-bottom: 24px;
 }
+.mt-4 {
+  margin-top: 24px;
+}
+.ml-1 {
+  margin-left: 24px;
+}
 
 .my-4 {
    margin-top: 24px;
@@ -214,12 +375,55 @@ Contains:
  .text-uppercase {
   text-transform: uppercase;
  }
- .text-uppercase {
+ .text-size-16 {
+  font-size: 16px;
+ }
+ .text-center {
   text-align: center;
  }
+ .text-left {
+  text-align: left;
+ }
+
+ .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+ }
+ .h4 {
+   font-size: 1.5rem;
+ }
+  .h6 {
+   font-size: 1.25rem;
+ }
+ /* placeholder */
+ .placeholder::placeholder,
+ .input-text {
+  opacity: 0.7;
+  font-weight: bolder;
+  font-family: Arial;
+  font-size: 16px;
+}
+ .placeholder-muted::placeholder {
+  opacity: 0.7;
+  /* font-weight: bolder; */
+  font-family: Arial;
+  font-size: 14px;
+  color: #6C757D;
+}
+
+   /* cursor */
+.cusor:hover {
+  cursor: pointer;
+}
  /* Shadow */
  .shadow {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+ }
+ .shadow-light {
+  box-shadow: 0 1.2px 5.68px 0 rgba(0,0,0,0.12);
  }
 
 /* 
@@ -234,13 +438,25 @@ Contains:
 }
 .width-60px {
   width: 60px;
+} 
+.min-width-mid {
+  min-width: 500px;
+}
+.min-width-big {
+  min-width: 700px;
 }
 /* Height */
 .height-auto {
   height: auto;
 }
-.height-8 {
-  height: 8em;
+.height-70 {
+  height: 70px;
+}
+.height-73 {
+  height: 73px;
+}
+.min-height {
+   height: calc(100vh - 80px);
 }
 
 /* 
@@ -250,29 +466,28 @@ Contains:
    width: 90%;
    margin: 0 auto;
  }
+  .position-center {
+   margin-left: auto;
+   margin-right: auto;
+ }
 .float-r {
     position: relative;
-    float: right;
+    float: right!important;
  }
  .float-l {
-    float: right !important;
+    float: left !important;
  }
+
  .block {
     display: block;
  }
+ .inline-block {
+    display: inline-block;
+ }
+ .flx {
+   display: flex;
+ }
  
-
- /* 
-==================================> Border Utililties
- */
- .border-light {
-   border: 1px solid #dee2e6;
-   border-color: #f8f9fa;
- }
-
-.border-primary {
-   border-color: #FCC604;
- }
 
 
 

@@ -282,9 +282,23 @@ table>tbody>tr:hover {
 }
 .button-delete:hover,
 .button-delete:focus {
-  /* padding: 10px; */
   opacity: 1;
   background-color: red;
+  cursor: pointer;
+}
+.button-activate {
+  background-color: #676AE6;
+  color: whitesmoke;
+  border: none;
+  padding: 6px;
+  opacity: 0.911;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.button-activate:hover,
+.button-activate:focus {
+  opacity: 1;
+  background-color: #676AE6;
   cursor: pointer;
 }
 

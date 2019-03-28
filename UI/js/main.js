@@ -3,11 +3,11 @@
  */
 
 
-const deleteButton = document.querySelector('.delete-button');
+const thisButton = document.querySelector('.alert-confirm');
 const confirmDelete = () => {
-  confirm("Are you sure you want to permanenetly delle this record?");
+  confirm("Are you sure you want to proceed?");
 }
-deleteButton.addEventListener('click', confirmDelete);
+thisButton.addEventListener('click', confirmDelete);
 
 
 

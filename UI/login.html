@@ -15,33 +15,33 @@
       ======================================= Header
     -->
     <section class="height-auto width-100">
-      <ul class="navbar" id="mynavBar">
-        <li class="nav-item pos-rel-hide rippler"><a href="/">Home</a></li>
-        <li class="nav-item pos-rel-hide rippler">Nearby ATM</li>
-        <li class="nav-item pos-rel-hide rippler">Branches</li>
-        <li class="nav-item pos-rel-hide rippler float-l text-info"><a href="">Get Started</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="ToggleDisplayNav()">
-          <i class="hamburger">&#9776;</i></a>
-        </li>
-      </ul>
-      
+      <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active pos-rel-hide rippler">Home</a>
+        <a href="/UI/admin.html" class="pos-rel-hide rippler">Admin</a>
+        <a href="/UI/user.html" class="pos-rel-hide rippler">User</a>
+        <a href="/UI/signup.html" class="pos-rel-hide rippler float-l text-info">Sign up</a>
+        <a href="javascript:void(0);" class="icon" onclick="displayToggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </section>
     <!--
       ======================================= Login form
     -->
-    <section class="height-auto width-100">
+    <section class="height-auto">
       <div class="my-10">
-        <form action="" method="" class="border-light p-5 shadow mb-4 bg-white ">
+        <form action="" method="" class="border-light p-5 shadow mb-4 bg-white max-width-mid min-width-mid">
           <!-- Heading -->
-          <p class="h4 mb-4 text-uppercase text-center font-weight-bolder">Login</p>
-          <!-- First Name -->
-          <label class="font-weight-bold bg-yellow form-label">Email</label>
-          <input type="text" class="form-control mb-4 bg-input width-100" name="first_name" placeholder="First Name" required>
+          <h2 class="h4 mb-4 text-uppercase text-center font-weight-bolder">Login</h2>
+          <!-- Email -->
+          <label class="h4 font-weight-bold form-label ">Email</label>
+          <input type="text" class="form-control mb-4 bg-input width-100 placeholder input-text" name="email" placeholder="First Name" required>
           <!-- Password -->
-          <label class="font-weight-bold text-center form-label">Password</label>
-          <input type="password" class="form-control mb-4 bg-input width-100" placeholder="Password" name="password" required>
+          <label class="h4 font-weight-bold form-label">Password</label>
+          <input type="password" class="form-control mb-4 bg-input width-100 placeholder input-text" placeholder="Password" name="password" required>
           <!-- Submit button -->
           <button class="button button-info my-4  width-100 pos-rel-hide rippler" type="submit">Login</button>
+          <p class="text-center">Don't have an account?<a href="/UI/signup.html" class="link">Sign up</a></p>
         </form>
       </div>
       
@@ -49,7 +49,7 @@
     <!--
       ======================================= Footer
     -->
-    <section class="height-auto width-100 height-8">Footer</section>
+    <footer class="height-auto width-100 height-8">Footer</footer>
   </div>
 </body>
 <script src="js/main.js"></script>

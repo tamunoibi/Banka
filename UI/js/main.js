@@ -1,8 +1,21 @@
+
+/* 
+==================================> Responsive top nav
+*/
+
+function displayToggle() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 /* 
 ==================================> Ripple Effect on buttons
  */
 const rippler = document.querySelectorAll('.rippler');
-
 Array.prototype.forEach.call(rippler, function(b){
   b.addEventListener('click', createRipple);
 })
@@ -24,16 +37,4 @@ function createRipple(e)
   circle.style.top = e.clientY - this.offsetTop - d / 2 + 'px';
   
   circle.classList.add('ripple');
-}
-/* 
-==================================> Responsive top nav
-*/
-
-function ToggleDisplayNav() {
-  var x = document.getElementById("mynavBar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
 }

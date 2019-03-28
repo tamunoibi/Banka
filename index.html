@@ -6,6 +6,7 @@
   <title>Banka</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="./UI/css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
 <body>
@@ -15,21 +16,22 @@
       ======================================= Header
     -->
     <section class="height-auto width-100">
-      <ul class="navbar" id="mynavBar">
-        <li class="nav-item pos-rel-hide rippler">Get Started</li>
-        <li class="nav-item pos-rel-hide rippler">Nearby ATM</li>
-        <li class="nav-item pos-rel-hide rippler">Branches</li>
-        <li class="nav-item pos-rel-hide rippler float-l text-info"><a href="./UI/login.html">Login</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="ToggleDisplayNav()">
-          <i class="hamburger">&#9776;</i></a>
-        </li>
-      </ul>
-      
+      <div class="topnav" id="myTopnav">
+        <a href="UI/signup.html" class="active pos-rel-hide rippler">Get Started</a>
+        <a href="/UI/user.html" class="pos-rel-hide rippler">User</a>
+        <a href="/UI/admin.html" class="pos-rel-hide rippler">Admin</a>
+        <a href="/UI/staff.html" class="pos-rel-hide rippler">Staff</a>
+        <a href="/UI/login.html" class="pos-rel-hide rippler float-l text-info">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="displayToggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </section>
     <!--
       ======================================= Main
     -->
     <!-- (Single Column) -->
+  
     <section class="height-auto width-100">
       <div class="card-div ">
           <ul class="card height-auto width-100">

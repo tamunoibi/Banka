@@ -238,9 +238,6 @@ table>tbody>tr:hover {
   background-color: #FCC604;
   opacity: 0.911;
   color: #FFF;
-  /* color: #FCC604; */
-  /* background-color: #1EAEDB; */
-  /* border-color: #1EAEDB; */
 }
 .button.button-disabled {
   opacity: 0.5;
@@ -274,6 +271,23 @@ table>tbody>tr:hover {
   opacity: 1;
   color: #FFF;
 }
+.button-delete {
+  background-color: #dc3545;
+  color: whitesmoke;
+  border: none;
+  padding: 6px;
+  opacity: 0.911;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.button-delete:hover,
+.button-delete:focus {
+  /* padding: 10px; */
+  opacity: 1;
+  background-color: red;
+  cursor: pointer;
+}
+
 
 /* 
 ==================================> Color Utililties

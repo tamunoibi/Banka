@@ -1,8 +1,8 @@
-.navbar {
+.topnav {
   overflow: hidden;
-  /* background-color: #333; */
 }
-.navbar .nav-item {
+
+.topnav a {
   float: left;
   display: block;
   text-align: center;
@@ -14,32 +14,35 @@
   cursor: pointer;
 }
 
-.navbar .nav-item:hover {
+.topnav a:hover {
   color: #FCC604;
 }
-.navbar .icon {
+
+
+.topnav .icon {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  .navbar .nav-item:not(:first-child) {display: none;}
-  .navbar a.icon {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
+    color: red;
   }
-}
-
-.navbar.responsive .nav-item {
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+}
+

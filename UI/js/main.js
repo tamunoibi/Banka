@@ -1,3 +1,15 @@
+/* 
+==================================> Confirm Delete
+ */
+
+
+const deleteButton = document.querySelector('.delete-button');
+const confirmDelete = () => {
+  confirm("Are you sure you want to permanenetly delle this record?");
+}
+deleteButton.addEventListener('click', confirmDelete);
+
+
 
 /* 
 ==================================> Responsive top nav

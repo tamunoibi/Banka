@@ -375,6 +375,9 @@ Contains:
 .p-5 {
    padding: 48px;
  }
+.pb-5 {
+   padding: 48px;
+ }
 
 .m-5 {
    margin: 48px;
@@ -477,6 +480,9 @@ Contains:
 .height-auto {
   height: auto;
 }
+.height-100 {
+  height: 100%;
+}
 .height-70 {
   height: 70px;
 }
@@ -485,6 +491,9 @@ Contains:
 }
 .min-height {
    height: calc(100vh - 80px);
+}
+.min-height-50 {
+   height: calc(100vh - 150px);
 }
 
 /* 

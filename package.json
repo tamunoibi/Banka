@@ -4,13 +4,21 @@
   "description": "An app to enable simple banking operations",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter dot",
-    "coverage": "nyc --reporter html --reporter text npm test"
+    "start": "babel-node server/index.js",
+    "bootcamp:build": "babel index.js -d build && build/index.js",
+    "dev": "nodemon server/index.js --exec babel-node --presets babel-preset-env",
+    "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "coveralls": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/girlking/Banka.git"
   },
+  "keywords": [
+    "node",
+    "express"
+  ],
   "author": "Tamunoibi Aprekuma",
   "license": "ISC",
   "bugs": {
@@ -18,14 +26,6 @@
   },
   "homepage": "https://github.com/girlking/Banka#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.0.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "babel-runtime": "^6.26.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "coveralls": "^3.0.3",
@@ -33,9 +33,43 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "istanbul": "^0.4.5",
     "mocha": "^6.0.2",
     "nyc": "^13.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-istanbul": "^5.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.9.0"
+  },
+  "nyc": {
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "plugins": [
+      "istanbul"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  }
 }

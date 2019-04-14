@@ -68,7 +68,7 @@ Pivotal Tracker Stories can found here [Pivotal tracker](https://www.pivotaltrac
   ```
 - Use `http://localhost:3000` as base url for endpoints
 
-<!-- ## API Endpoints
+ ## API Endpoints
 
 | METHOD | DESCRIPTION                             | ENDPOINTS                 |
 | ------ --| --------------------------------------- | ------------------------- |

@@ -141,6 +141,12 @@ table>tbody>tr:hover {
 .link:hover {
   cursor: pointer;  
 }
+      /* Transparent card */
+.card-dark {
+  background-color: rgba(0,0,0,.30);
+  color: #f8f9fa;
+  padding: 10px;
+}
 /* Text title */
 .text-title {
   font-size: 16px;
@@ -155,11 +161,11 @@ table>tbody>tr:hover {
   border-bottom-color: #FCC604;
     
 }
-.border-blue {
+.border-yellow-table {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: rgb(87, 106, 230);
-  border-bottom-color: #676AE6;
+  border-bottom-color: #FCC604;
     
 }
  .border-light {
@@ -493,7 +499,7 @@ Contains:
    height: calc(100vh - 80px);
 }
 .min-height-50 {
-   height: calc(100vh - 150px);
+   height: calc(100vh - 143px);
 }
 
 /* 
@@ -503,10 +509,37 @@ Contains:
    width: 90%;
    margin: 0 auto;
  }
-  .position-center {
-   margin-left: auto;
-   margin-right: auto;
+ .position-top {
+   top: 250px;
+   /* right: 50%; */
+   /* transform: translateY(-50%); */
  }
+
+.position-x-center {
+  /* right: 200px; */
+  /* margin: auto; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+ }
+ /* 
+ 1. relative pos
+ 2. top :    //px
+ 3. margin: auto
+ 4. max-width:
+*/
+/* .position-bottom {
+  right: 50%;
+  bottom: 20%;
+ }
+.pos-absolute {
+   position: absolute;
+ }
+.pos-relative {
+   position: relative;
+ } */
+
 .float-r {
     position: relative;
     float: right!important;

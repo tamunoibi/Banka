@@ -18,8 +18,8 @@
     <header class="height-auto width-100 bg-white">
       <div class="topnav" id="myTopnav">
         <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
-        <a href="admin.html" class="pos-rel-hide rippler">Transactions</a>
-        <a class="pos-rel-hide rippler">Accounts</a>
+        <a href="user.html" class="pos-rel-hide rippler text-info">Transactions</a>
+        <a href="user-account.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
@@ -32,42 +32,52 @@
     </header>
 
     <!--
-      ======================================= Transactions User
+      ======================================= Accounts User
     -->
-    <main class="container min-height">
+    <section class="container min-height">
       <form action="">
         <input type="text" class="form-control placeholder-muted mt-4 ml-1 border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account name, account number or amount">
       </form>
-      <section class="mt-4 bg-white profile-card  shadow-light">
-
-        <form action="" method="">
-          <!-- Title -->
-          <div class="border-yellow-table">
-            <div class="text-title inline-block">User Account Creation</div>
-          </div>
-          <!-- User Role -->
-          <label class="font-weight-bold form-label mt-4">User's Role</label>
-          <!-- <input type="text" class="form-control mb-4 width-50 bg-gray" name="first_name"> -->
-          <select class="form-control mb-4 width-50 bg-gray" name="role">
-            <option value="">Admin</option>
-            <option value="">Staff</option>
-          </select>
-          <!-- Email -->
-          <label class="font-weight-bold form-label">Users Email</label>
-          <input type="email" class="form-control mb-4 width-50 bg-gray" name="number" placeholder="">
-          <!-- Emplyee Id -->
-          <label class="font-weight-bold form-label">Users Full Name</label>
-          <input type="text" class="form-control mb-4 width-50 bg-gray" name="residential_address" placeholder="">
-
-          
-          <!-- Submit button -->
-          <button class="button button-save my-4 pos-rel-hide rippler" type="submit">Create</button>
-        </form>
-         
-  
-      </section>    
       
-    </main>
+      <p class="border-yellow-table h6">Accounts owned by <span>PRAISE BROWN</span></p>
+      <div class="bg-white min-width-big shadow-light">
+        <!-- <h6 class="">3 Account(s)</h6> -->
+        
+        <table class="table width-100">
+          <thead>
+            <tr class="bg-light-blue text-left">
+              <th>Account Number</th>
+              <th>Type</th>
+              <th>Balance</th>
+              <th>Date Created</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>010760089</td>
+              <td>Current</td>
+              <td># 60,000</td>
+              <td>25-Mar-19</td>
+            </tr>
+            <tr>
+              <td>010760089</td>
+              <td>Savings</td>
+              <td># 60,000</td>
+              <td>25-Mar-19</td>
+            </tr>
+            <tr>
+              <td>1098704532</td>
+              <td>Current</td>
+              <td># 90,000</td>
+              <td>25-Jan-19</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+    </section>
+  
     <!--
       ======================================= Footer
     -->

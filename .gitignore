@@ -1,2 +1,6 @@
-UI/images
-readme.txt
+node_modules
+.nyc_output
+coverage
+.env
+example
+example.html

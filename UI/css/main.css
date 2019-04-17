@@ -200,7 +200,7 @@ table>tbody>tr:hover {
 
 
 .overflow-none {
-  overflow-x: auto;
+  overflow-x: none;
 }
 
 .gravatar {
@@ -555,22 +555,10 @@ Contains:
   transform: translateX(-50%);
   
  }
- /* 
- 1. relative pos
- 2. top :    //px
- 3. margin: auto
- 4. max-width:
-*/
-/* .position-bottom {
-  right: 50%;
-  bottom: 20%;
+.position-90 {
+   width: 90%;
+   margin: 0 auto;
  }
-.pos-absolute {
-   position: absolute;
- }
-.pos-relative {
-   position: relative;
- } */
 
 .float-r {
     position: relative;

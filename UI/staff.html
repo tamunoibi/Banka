@@ -15,16 +15,16 @@
     <!--
       ======================================= Header
     -->
-    <header class="height-auto width-100 bg-white">
+    <header class="height-auto width-100  bg-white">
       <div class="topnav" id="myTopnav">
         <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
-        <a href="admin.html" class="pos-rel-hide rippler">Transactions</a>
+        <a href="" class="pos-rel-hide rippler border-yellow">Transactions</a>
         <a class="pos-rel-hide rippler">Accounts</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
         <a href="../index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
-        <a href="profile.html" class="float-r cusor">
+        <a href="" class="float-r cusor">
             <i><img class="gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
         </a>
 
@@ -34,10 +34,7 @@
     <!--
       ======================================= Transactions User
     -->
-    <main class="container min-height">
-      <form action="">
-        <input type="text" class="form-control placeholder-muted mt-4 ml-1 border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account name, account number or amount">
-      </form>
+    <main class="min-height">
       <section class="mt-4 bg-white profile-card  shadow-light">
 
         <form action="" method="">
@@ -47,14 +44,14 @@
           </div>
           <!-- Customer Details Role -->
           <label class="font-weight-bold form-label mt-4">Transactin Kind</label>
-          <select class="form-control mb-4 width-50 bg-gray" name="role">
+          <select class="form-control mb-4 width-100 bg-gray" name="role">
             <option value="">Select the kind of transaction</option>
             <option value="">Withdrawal</option>
             <option value="">Deposit</option>
           </select>
                     <!-- Customer Details Role -->
           <label class="font-weight-bold form-label mt-4">Customer Details</label>
-          <select class="form-control mb-4 width-50 bg-gray" name="role">
+          <select class="form-control mb-4 width-100 bg-gray" name="role">
             <option value="">Select the customer Account Number</option>
             <option value="">0909903384  (Paul Abel)</option>
             <option value="">0009903384  (Sofia Verga)</option>
@@ -62,11 +59,11 @@
 
           <!-- Emplyee Id -->
           <label class="font-weight-bold form-label">Amount</label>
-          <input type="number" class="form-control mb-4 width-50 bg-gray" name="" placeholder="Type the amount to be deposited">
+          <input type="number" class="form-control mb-4 width-100 bg-gray" name="" placeholder="Type the amount">
 
           
           <!-- Submit button -->
-          <button class="button button-save my-4 pos-rel-hide rippler" type="submit">Deposit</button>
+          <button class="button button-info my-4 pos-rel-hide rippler" type="submit">Submit</button>
         </form>
          
   
@@ -76,7 +73,7 @@
     <!--
       ======================================= Footer
     -->
-    <footer class="height-auto width-100 height-70 text-center">Andela &#169;2019</footer>
+    <footer class="height-auto width-100  height-70 text-center">Andela &#169;2019</footer>
   </div>
 </body>
 <script src="js/main.js"></script>

@@ -18,8 +18,8 @@
     <header class="height-auto width-100 bg-white">
       <div class="topnav" id="myTopnav">
         <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
-        <a href="admin.html" class="pos-rel-hide rippler">Accounts</a>
-        <a href="all-user-accout.html" class="pos-rel-hide rippler text-info border-yellow">Users</a>
+        <a href="admin.html" class="pos-rel-hide rippler">Transactions</a>
+        <a href="all-user-accout.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
@@ -36,9 +36,14 @@
       ======================================= Transactions User
     -->
     <section class="container min-height">
-      <input type="text" class="form-control placeholder-muted mt-4 ml-1 border-none shadow bg-white width-50" placeholder="Search records by  account name or account numbert">
+      <div>
+        <form action="">
+          <input type="text" class="form-control placeholder-muted mt-4  border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account number or amount">
+          <button type="submit" class="search-icon shadow"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
 
-      <p class="border-yellow-table text-size-16 ">All User Accounts</p>
+      <p class="border-blue text-size-16 ">All User Accounts</p>
       <div class="">
         <div class="bg-white min-width-big shadow-light mb-4">
           <!-- <h6 class="">3 Transaction(s)</h6> -->
@@ -80,7 +85,7 @@
             </tbody>
           </table>
         </div>
-        <div><a href="create-user.html" class="float-r"><button class="button button-save" title="Create a new Account"><i class="fa fa-plus">Create  User</i></button></a></div>
+        <div><a href="create-user.html" class="float-r"><button class="button button-info" title="Create a new Account"><i class="fa fa-plus">Create  User</i></button></a></div>
       
 
       </div>

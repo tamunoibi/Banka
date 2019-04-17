@@ -15,7 +15,7 @@
     <!--
       ======================================= Header
     -->
-    <header class="height-auto width-100 bg-white">
+    <header class="height-auto width-100  bg-white">
       <div class="topnav" id="myTopnav">
         <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
         <a href="user.html" class="pos-rel-hide rippler text-info">Transactions</a>
@@ -35,28 +35,37 @@
       ======================================= Transactions User
     -->
     <section class="min-height">
-      <div class="overflow-none width-90 position-x-center">
-
-      <div>
-        <form action="">
-          <input type="text" class="form-control placeholder-muted mt-4  border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account number or amount">
-          <button type="submit" class="search-icon shadow"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-
-      
-      <p class="border-yellow-table h4">Accounts of Praise Brownson</p>
-        <div class="bg-white">
-          dfa
+      <div class="overflow-none position-x-center overflow-none mt-4 bg-white profile-card  shadow-light">
+        <form action="" method="">
+          <!-- Title -->
+          <div class="border-yellow-table">
+            <div class="text-title inline-block">Personal Information</div>
+          </div>
+          <!-- First Name -->
+          <label class="font-weight-bold form-label mt-4">Full Name</label>
+          <input type="text" class="form-control mb-4 width-100 bg-gray width-100" name="first_name" value="Praise Brownson">
+          <!-- Laste Name -->
+          <label class="font-weight-bold form-label">Account Number</label>
+          <input type="number" class="form-control mb-4 width-100 bg-gray" name="account_number" value="0107600456" disabled>
+          <!-- Email Address -->
+          <label class="font-weight-bold form-label">Email</label>
+          <input type="text" class="form-control mb-4 width-100 bg-gray" name="last_name" value="praise@yahoo.co.uk">
+          <!-- File Address -->
+          <div>
+            <i><img class="big-gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
+            <input type="file">
+          </div>
           
-        </div>
+          <!-- Submit button -->
+          <button class="button button-info my-4 pos-rel-hide rippler float-r" type="submit">Save</button>
+        </form>
       </div>
     </section>
   
     <!--
       ======================================= Footer
     -->
-    <footer class="height-auto width-100 height-70 text-center card-dark">Andela &#169;2019</footer>
+    <footer class="height-auto width-100  height-70 text-center card-dark">Andela &#169;2019</footer>
   </div>
 </body>
 <script src="js/main.js"></script>

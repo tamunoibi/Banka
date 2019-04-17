@@ -9,6 +9,8 @@
     "dev": "nodemon server/index.js --exec babel-node --presets babel-preset-env",
     "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "create": "babel-node server/migration/createTable.js",
+    "drop": "babel-node server/migration/dropTables.js",
     "coveralls": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
   "repository": {

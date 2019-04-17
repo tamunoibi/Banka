@@ -3,8 +3,9 @@
  */
 
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-@import "./top-nav.css";
 @import "./animateimage.css";
+@import "./top-nav.css";
+@import "./searchBar.css";
  /* 
 ==================================> Remove Defaults
  */
@@ -43,6 +44,7 @@ body {
     margin: 0; 
     letter-spacing: 0.4px;
     line-height: 1.5;
+    background-color: rgb(244, 246, 248);
 }
      /* Flex Container */
 .flex-container {
@@ -100,7 +102,28 @@ body {
     height: 34px;
 }
       /* Tables */
-.table {
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+     /* background-color: red; */
+    border-bottom: 1px solid rgb(245, 245, 245);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(245, 245, 245);
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+}
+table>tbody>tr:hover {
+  background-color: rgb(238, 240, 252);
+}
+/* .table {
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
@@ -119,8 +142,6 @@ body {
     padding: 8px; 
     vertical-align: top;
     height: 60px;
-    /* border-top: 1px solid #ddd; */
-
     border-bottom: 1px solid rgb(245, 245, 245);
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -128,12 +149,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.4px;
 }
-/* tr:nth-child(even) {
-  background-color: #f2f2f2;
-} */
 table>tbody>tr:hover {
   background-color: rgb(238, 240, 252);
-}
+} */
         /* Links */
 .link {
   color: #4990E2;   
@@ -166,6 +184,7 @@ table>tbody>tr:hover {
   border-bottom-style: solid;
   border-bottom-color: rgb(87, 106, 230);
   border-bottom-color: #FCC604;
+  margin-top: 5%;   
     
 }
  .border-light {
@@ -180,9 +199,9 @@ table>tbody>tr:hover {
  }
 
 
-  .overflow-none {
+.overflow-none {
   overflow-x: auto;
-  }
+}
 
 .gravatar {
   vertical-align: middle;
@@ -308,7 +327,17 @@ table>tbody>tr:hover {
   cursor: pointer;
 }
 
-
+/* Search Icon */
+.search-icon {
+  /* float: right; */
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
 /* 
 ==================================> Color Utililties
 Contains:
@@ -469,6 +498,9 @@ Contains:
  /* Width */
 .width-100 {
   width: 100%;
+}
+.width-90 {
+  width: 90%;
 }
 .width-50 {
   width: 50%;

@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- Flex Container -->
-  <div class="flex-container width-100 bg-check">
+  <div class="bg-check">
     <!--
       ======================================= Header
     -->
@@ -32,56 +32,60 @@
     </header>
 
     <!--
-      ======================================= Accounts User
+      ======================================= Transactions User
     -->
-    <section class="container min-height">
-      <form action="">
-        <input type="text" class="form-control placeholder-muted mt-4 ml-1 border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account name, account number or amount">
-      </form>
-      
-      <p class="border-yellow-table h6">Accounts owned by <span>PRAISE BROWN</span></p>
-      <div class="bg-white min-width-big shadow-light">
-        <!-- <h6 class="">3 Account(s)</h6> -->
-        
-        <table class="table width-100">
-          <thead>
-            <tr class="bg-light-blue text-left">
-              <th>Account Number</th>
-              <th>Type</th>
-              <th>Balance</th>
-              <th>Date Created</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>010760089</td>
-              <td>Current</td>
-              <td># 60,000</td>
-              <td>25-Mar-19</td>
-            </tr>
-            <tr>
-              <td>010760089</td>
-              <td>Savings</td>
-              <td># 60,000</td>
-              <td>25-Mar-19</td>
-            </tr>
-            <tr>
-              <td>1098704532</td>
-              <td>Current</td>
-              <td># 90,000</td>
-              <td>25-Jan-19</td>
-            </tr>
-            
-          </tbody>
-        </table>
+    <section class="min-height">
+      <div class="overflow-none width-90 position-x-center">
+zz
+      <div>
+        <form action="">
+          <input type="text" class="form-control placeholder-muted mt-4  border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account number or amount">
+          <button type="submit" class="search-icon shadow"><i class="fa fa-search"></i></button>
+        </form>
       </div>
+
       
+      <p class="border-yellow-table h4">Accounts of Praise Brownson</p>
+        <div class="bg-white">
+          <table class="table width-100">
+            <thead>
+              <tr class="bg-light-blue text-left">
+                <th>Account Number</th>
+                <th>Type</th>
+                <th>Balance</th>
+                <th>Date Created</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>010760089</td>
+                <td>Current</td>
+                <td># 60,000</td>
+                <td>25-Mar-19</td>
+              </tr>
+              <tr>
+                <td>010760089</td>
+                <td>Savings</td>
+                <td># 60,000</td>
+                <td>25-Mar-19</td>
+              </tr>
+              <tr>
+                <td>1098704532</td>
+                <td>Current</td>
+                <td># 90,000</td>
+                <td>25-Jan-19</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+        <div><a href="create-user.html" class="float-r mt-4"><button class="button button-info" title="Create a new Account"><i class="fa fa-plus">Create  Account</i></button></a></div>
     </section>
   
     <!--
       ======================================= Footer
     -->
-    <footer class="height-auto width-100 height-70 text-center">Andela &#169;2019</footer>
+    <footer class="height-auto width-100 height-70 text-center card-dark">Andela &#169;2019</footer>
   </div>
 </body>
 <script src="js/main.js"></script>

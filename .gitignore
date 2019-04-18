@@ -1,2 +1,9 @@
-UI/images
-readme.txt
+node_modules
+.nyc_output
+coverage
+.env
+example
+example.html
+ UI/Teste-cool-search.html
+UI/Teste-cool-search.html
+ UI/css/searchBar.css

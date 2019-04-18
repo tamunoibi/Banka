@@ -17,62 +17,84 @@
     -->
     <header class="height-auto width-100 bg-white">
       <div class="topnav" id="myTopnav">
-        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
-        <a href="admin.html" class="pos-rel-hide rippler">Transactions</a>
-        <a class="pos-rel-hide rippler">Accounts</a>
+        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://i.postimg.cc/j5BGxXp7/bank-svgrepo-com.png" class="gravatar"></a>
+        <a href="staff.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
         <a href="../index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
-        <a href="profile.html" class="float-r cusor">
+        <a href="staff-profile.html" class="float-r cusor">
             <i><img class="gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
         </a>
 
       </div>
     </header>
 
+  
     <!--
       ======================================= Transactions User
     -->
-    <main class="container min-height">
-      <form action="">
-        <input type="text" class="form-control placeholder-muted mt-4 ml-1 border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account name, account number or amount">
-      </form>
-      <section class="mt-4 bg-white profile-card  shadow-light">
-
-        <form action="" method="">
-          <!-- Title -->
-          <div class="border-blue">
-            <div class="text-title inline-block">Initiate Transaction</div>
-          </div>
-          <!-- Customer Details Role -->
-          <label class="font-weight-bold form-label mt-4">Transactin Kind</label>
-          <select class="form-control mb-4 width-50 bg-gray" name="role">
-            <option value="">Select the kind of transaction</option>
-            <option value="">Withdrawal</option>
-            <option value="">Deposit</option>
-          </select>
-                    <!-- Customer Details Role -->
-          <label class="font-weight-bold form-label mt-4">Customer Details</label>
-          <select class="form-control mb-4 width-50 bg-gray" name="role">
-            <option value="">Select the customer Account Number</option>
-            <option value="">0909903384  (Paul Abel)</option>
-            <option value="">0009903384  (Sofia Verga)</option>
-          </select>
-
-          <!-- Emplyee Id -->
-          <label class="font-weight-bold form-label">Amount</label>
-          <input type="number" class="form-control mb-4 width-50 bg-gray" name="" placeholder="Type the amount to be deposited">
-
-          
-          <!-- Submit button -->
-          <button class="button button-save my-4 pos-rel-hide rippler" type="submit">Deposit</button>
+    <section class="container min-height">
+      <div>
+        <form action="">
+          <input type="text" class="form-control placeholder-muted mt-4  border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account number or amount">
+          <button type="submit" class="search-icon shadow"><i class="fa fa-search"></i></button>
         </form>
-         
-  
-      </section>    
+      </div>
+
+      <p class="border-yellow-table h4">All Bank Accounts</p>
+      <div class="">
+        <div class="bg-white min-width-big shadow-light mb-4">
+          <!-- <h6 class="">3 Transaction(s)</h6> -->
+          
+          <table class="table width-100">
+            <thead>
+              <tr class="bg-light-blue text-left">
+                <th>Account Name</th>
+                <th>Account Number</th>
+                <th>Account Type</th>
+                <th>Status</th>
+                <th>Action</th>
+                <th id="deleteBtn">Delete</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Anna Paul</td>
+                <td>010760089</td>
+                <td>Savings</td>
+                <td class="text-green">Active</td>
+                <td><button class="button-delete alert-confirm">Deactivate</button></td>
+                <td><i class="fa fa-trash text-delete" aria-hidden="true"></i></td>
+                <td class="button button-light"><a href="staff-single-account.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Debbie Jos</td>
+                <td>1098764532</td>
+                <td>Savings</td>
+                <td class="text-red">Inactive</td>
+                <td><button class="button-activate alert-confirm">Activate</button></td>
+                <td><i class="fa fa-trash text-delete" aria-hidden="true"></i></td>
+                <td class="button button-light"><a href="staff-single-account.html">View</a></td>
+              </tr>
+              <tr>
+                <td>Sussan Saul</td>
+                <td>1098704532</td>
+                <td>Current</td>
+                <td class="text-red">Inactive</td>
+                <td><button class="button-activate">Activate</button></td>
+                <td><i class="fa fa-trash text-delete" aria-hidden="true"></i></td>
+                <td class="button button-light"><a href="staff-single-account.html">View</a></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
       
-    </main>
+    </section>
+  
     <!--
       ======================================= Footer
     -->

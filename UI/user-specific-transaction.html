@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Banka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <!-- Flex Container -->
+  <div class="flex-container width-100 bg-check">
+    <!--
+      ======================================= Header
+    -->
+    <header class="height-auto width-100  bg-white">
+      <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://i.postimg.cc/j5BGxXp7/bank-svgrepo-com.png" class="gravatar"></a>
+        <a href="user.html" class="pos-rel-hide rippler text-info">Accounts</a>
+        <a class="icon" onclick="displayToggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="../index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
+        <a href="profile.html" class="float-r cusor">
+            <i><img class="gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
+        </a>
+
+      </div>
+    </header>
+
+    <!--
+      ======================================= Transactions User
+    -->
+    <main class="min-height">
+      <!-- <div>
+        <form action="">
+          <input type="text" class="form-control placeholder-muted mt-4  border-none shadow bg-white width-100 inline-block" placeholder="search transactions by account number or amount">
+          <button type="submit" class="search-icon shadow"><i class="fa fa-search"></i></button>
+        </form>
+      </div> -->
+      <section class="mt-4 bg-white profile-card  shadow-light" >
+
+        <form action="" method="">
+          <!-- Title -->
+          <div class="border-yellow-table">
+            <div class="text-title inline-block h2 h3"><b>Transaction Id: 32238</b></div>
+          </div>
+      
+          <!--  -->
+          <div class="">
+            <h3 class="h3"><b>Transaction Amount </b></h3>
+            <p class="text-red">500,000.00 Naira</p>
+          </div>
+                    <!--  -->
+          <div class="">
+            <h3 class="h3"><b>Transaction Type </b></h3>
+            <p>Withdrawal</p>
+          </div>
+                    <!--  -->
+          <div class="">
+            <h3 class="h3"><b>Transaction Date</b></h3>
+            <p>25th May 2018</p>
+          </div>
+        
+        
+          
+        </form>
+         
+  
+      </section>    
+      
+    </main>
+    <!--
+      ======================================= Footer
+    -->
+    <footer class="height-auto width-100  height-70 text-center">Andela &#169;2019</footer>
+    
+  </div>
+</body>
+<script src="js/main.js"></script>
+</html>

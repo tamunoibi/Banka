@@ -3,8 +3,9 @@
  */
 
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-@import "./top-nav.css";
 @import "./animateimage.css";
+@import "./top-nav.css";
+@import "./searchBar.css";
  /* 
 ==================================> Remove Defaults
  */
@@ -43,6 +44,7 @@ body {
     margin: 0; 
     letter-spacing: 0.4px;
     line-height: 1.5;
+    background-color: rgb(244, 246, 248);
 }
      /* Flex Container */
 .flex-container {
@@ -100,7 +102,28 @@ body {
     height: 34px;
 }
       /* Tables */
-.table {
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+     /* background-color: red; */
+    border-bottom: 1px solid rgb(245, 245, 245);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(245, 245, 245);
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+}
+table>tbody>tr:hover {
+  background-color: rgb(238, 240, 252);
+}
+/* .table {
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
@@ -119,8 +142,6 @@ body {
     padding: 8px; 
     vertical-align: top;
     height: 60px;
-    /* border-top: 1px solid #ddd; */
-
     border-bottom: 1px solid rgb(245, 245, 245);
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -128,18 +149,21 @@ body {
     line-height: 1.5;
     letter-spacing: 0.4px;
 }
-/* tr:nth-child(even) {
-  background-color: #f2f2f2;
-} */
 table>tbody>tr:hover {
   background-color: rgb(238, 240, 252);
-}
+} */
         /* Links */
 .link {
   color: #4990E2;   
 }
 .link:hover {
   cursor: pointer;  
+}
+      /* Transparent card */
+.card-dark {
+  background-color: rgba(0,0,0,.30);
+  color: #f8f9fa;
+  padding: 10px;
 }
 /* Text title */
 .text-title {
@@ -155,11 +179,12 @@ table>tbody>tr:hover {
   border-bottom-color: #FCC604;
     
 }
-.border-blue {
+.border-yellow-table {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: rgb(87, 106, 230);
-  border-bottom-color: #676AE6;
+  border-bottom-color: #FCC604;
+  margin-top: 5%;   
     
 }
  .border-light {
@@ -174,9 +199,9 @@ table>tbody>tr:hover {
  }
 
 
-  .overflow-none {
-  overflow-x: auto;
-  }
+.overflow-none {
+  overflow-x: none;
+}
 
 .gravatar {
   vertical-align: middle;
@@ -287,7 +312,7 @@ table>tbody>tr:hover {
   cursor: pointer;
 }
 .button-activate {
-  background-color: #676AE6;
+  background-color: #51ce9b;
   color: whitesmoke;
   border: none;
   padding: 6px;
@@ -298,11 +323,21 @@ table>tbody>tr:hover {
 .button-activate:hover,
 .button-activate:focus {
   opacity: 1;
-  background-color: #676AE6;
+  background-color: #51ce9b;
   cursor: pointer;
 }
 
-
+/* Search Icon */
+.search-icon {
+  /* float: right; */
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
 /* 
 ==================================> Color Utililties
 Contains:
@@ -353,6 +388,9 @@ Contains:
 /* For Text Colors */
 .text-gray {
   color: #1e394e;
+}
+.text-delete {
+  color: #dc3545;
 }
 .text-info {
   color: #FCC604;
@@ -464,6 +502,9 @@ Contains:
 .width-100 {
   width: 100%;
 }
+.width-90 {
+  width: 90%;
+}
 .width-50 {
   width: 50%;
 }
@@ -493,7 +534,7 @@ Contains:
    height: calc(100vh - 80px);
 }
 .min-height-50 {
-   height: calc(100vh - 150px);
+   height: calc(100vh - 143px);
 }
 
 /* 
@@ -503,10 +544,25 @@ Contains:
    width: 90%;
    margin: 0 auto;
  }
-  .position-center {
-   margin-left: auto;
-   margin-right: auto;
+ .position-top {
+   top: 250px;
+   /* right: 50%; */
+   /* transform: translateY(-50%); */
  }
+
+.position-x-center {
+  /* right: 200px; */
+  /* margin: auto; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+ }
+.position-90 {
+   width: 90%;
+   margin: 0 auto;
+ }
+
 .float-r {
     position: relative;
     float: right!important;

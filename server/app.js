@@ -14,15 +14,15 @@ app.use(bodyParser.json());
 app.use(router);
 app.get('/', (req, res) => {
   res.json({
-    status: 'success',
-    message: 'Welcome to Store-Manager by Aprekuma Tamunoibi',
+    status: 200,
+    success: 'Welcome to Store-Manager by Aprekuma Tamunoibi',
   });
 });
 
 app.use((req, res) => {
   res.status(404).json({
     status: 'error',
-    message: 'Nothing found here please check the route and try again',
+    error: 'Nothing found here please check the route and try again',
   });
 });
 

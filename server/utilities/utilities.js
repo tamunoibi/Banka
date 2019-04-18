@@ -1,8 +1,8 @@
 import users from '../models/UserModel';
 
-export const findByEmail = (userEmail) => {
+const findByEmail = (userEmail) => {
   const user = users.find(singleUser => singleUser.email === userEmail);
   return user;
 };
 
-export default users;
+export default findByEmail;

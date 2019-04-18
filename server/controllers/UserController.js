@@ -8,22 +8,23 @@ export const createUser = (req, res) => {
   if (!email || !firstName || !lastName || !password || !type) {
     return res.status(400).json({
       status: 'error',
-      message: 'All fields are required. Please fill them',
+      error: 'All fields are required. Please fill them',
     });
   }
-  const user = {
-    id: `234B0${users.length - 5 + 1}`,
+  const data = {
+    token: `739${users.length + 1}`,
+    id: `234B0${users.length + 1}`,
     email,
     firstName,
     lastName,
     password,
     type,
   };
-  users.push(user);
+  users.push(data);
   return res.status(201).json({
-    status: 'success',
-    user,
-    token: `234B0${users.length - 5 + 1}`,
+    status: 201,
+    data,
+
   });
 };
 
@@ -32,8 +33,8 @@ export const loginUser = (req, res) => {
 
   if (!email || !password) {
     return res.status(400).json({
-      status: 'error',
-      message: 'All fields are required. Please fill them',
+      status: '400',
+      error: 'All fields are required. Please fill them',
     });
   }
 
@@ -41,14 +42,28 @@ export const loginUser = (req, res) => {
   if (!user) {
     return res.status(400).json({
       status: 'error',
-      message: 'No User with the given email',
+      error: 'No User with the given Credentials',
     });
   }
 
   if (String(user.password) !== String(password)) {
     return res.status(401).json({
       status: 'error',
-      message: 'Password could not be authenticated',
+      error: 'No User with the given credentials',
+    });
+  }
+
+  if (String(user.password) !== String(password)) {
+    return res.status(401).json({
+      status: 'error',
+      error: 'Password could not be authenticated',
+    });
+  }
+
+  if (String(user.password) !== String(password)) {
+    return res.status(401).json({
+      status: 'error',
+      error: 'Password could not be authenticated',
     });
   }
 
@@ -57,16 +72,14 @@ export const loginUser = (req, res) => {
   } = user;
 
   user = {
-    token: `234B0${users.length - 5 + 1}`,
+    token: `234B0${users.length + 1}`,
     id,
     firstName,
     lastName,
     email,
   };
   return res.status(201).json({
-    status: 'success',
+    status: 201,
     user,
   });
 };
-
-export default users;

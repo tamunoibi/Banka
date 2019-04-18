@@ -6,7 +6,7 @@ export const createAccount = (req, res) => {
   } = req.body;
   if (!accountNumber || !owner || !type || !status || !balance) {
     return res.status(400).json({
-      status: 'error',
+      status: 400,
       error: 'All fields are required. Please fill them',
     });
   }
@@ -41,7 +41,7 @@ export const updateAccount = (req, res) => {
   account.update(status);
 
   return res.status(202).json({
-    status: 'success',
+    status: 203,
     account,
   });
 };
@@ -59,8 +59,6 @@ export const deleteAccount = (req, res) => {
   const indexOfAccount = accounts.indexOf(data);
 
   accounts.splice(indexOfAccount, 1);
-  console.log('hellos');
-
   return res.status(204).json({
     status: 204,
     data,

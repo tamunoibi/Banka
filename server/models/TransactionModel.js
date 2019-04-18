@@ -2,7 +2,7 @@ const transactions = [
 
   {
     id: 2344,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'debit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -12,7 +12,7 @@ const transactions = [
   },
   {
     id: 2341,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -22,7 +22,7 @@ const transactions = [
   },
   {
     id: 2342,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -32,7 +32,7 @@ const transactions = [
   },
   {
     id: 2343,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -42,7 +42,7 @@ const transactions = [
   },
   {
     id: 2344,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -52,7 +52,7 @@ const transactions = [
   },
   {
     id: 2341,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -62,7 +62,7 @@ const transactions = [
   },
   {
     id: 2342,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -72,7 +72,7 @@ const transactions = [
   },
   {
     id: 2343,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -82,7 +82,7 @@ const transactions = [
   },
   {
     id: 2341,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -92,7 +92,7 @@ const transactions = [
   },
   {
     id: 2342,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -102,7 +102,7 @@ const transactions = [
   },
   {
     id: 2343,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -112,7 +112,7 @@ const transactions = [
   },
   {
     id: 2341,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -122,7 +122,7 @@ const transactions = [
   },
   {
     id: 2342,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -132,7 +132,7 @@ const transactions = [
   },
   {
     id: 2343,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -142,7 +142,7 @@ const transactions = [
   },
   {
     id: 2344,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -152,7 +152,7 @@ const transactions = [
   },
   {
     id: 2345,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -162,7 +162,7 @@ const transactions = [
   },
   {
     id: 2341,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -172,7 +172,7 @@ const transactions = [
   },
   {
     id: 2342,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -182,7 +182,7 @@ const transactions = [
   },
   {
     id: 2343,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -192,7 +192,7 @@ const transactions = [
   },
   {
     id: 2344,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -202,7 +202,7 @@ const transactions = [
   },
   {
     id: 2341,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -212,7 +212,7 @@ const transactions = [
   },
   {
     id: 2342,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -222,7 +222,7 @@ const transactions = [
   },
   {
     id: 2343,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -232,7 +232,7 @@ const transactions = [
   },
   {
     id: 2344,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -242,7 +242,7 @@ const transactions = [
   },
   {
     id: 2344,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -252,7 +252,7 @@ const transactions = [
   },
   {
     id: 2341,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -262,7 +262,7 @@ const transactions = [
   },
   {
     id: 2342,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,
@@ -272,7 +272,7 @@ const transactions = [
   },
   {
     id: 2343,
-    createdOn: 'DateTime',
+    createdOn: new Date(),
     type: 'credit',
     accountNumber: 10600283,
     cashier: 9032843,

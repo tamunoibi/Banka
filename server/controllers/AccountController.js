@@ -6,22 +6,23 @@ export const createAccount = (req, res) => {
   } = req.body;
   if (!accountNumber || !owner || !type || !status || !balance) {
     return res.status(400).json({
-      status: 'error',
-      message: 'All fields are required. Please fill them',
+      status: 400,
+      error: 'All fields are required. Please fill them',
     });
   }
-  const account = {
+  const data = {
     id: `234B0${accounts.length - 5 + 1}`,
     accountNumber,
     owner,
+    createdOn: new Date(),
     type,
     status,
     balance,
   };
-  accounts.push(account);
+  accounts.push(data);
   return res.status(201).json({
-    status: 'success',
-    account,
+    status: 201,
+    data,
   });
 };
 
@@ -32,7 +33,7 @@ export const updateAccount = (req, res) => {
   if (!account) {
     return res.status(400).json({
       status: 'error',
-      message: 'No account with the given email',
+      error: 'No account with the given email',
     });
   }
   const { status } = req.body;
@@ -40,7 +41,7 @@ export const updateAccount = (req, res) => {
   account.update(status);
 
   return res.status(202).json({
-    status: 'success',
+    status: 203,
     account,
   });
 };
@@ -48,23 +49,18 @@ export const updateAccount = (req, res) => {
 
 export const deleteAccount = (req, res) => {
   const { accountId } = req.params;
-  const account = accounts.find(singleAccount => singleAccount.accountNumber === accountId);
-
-  if (!account) {
-    return res.status(400).json({
-      status: 'error',
-      message: 'No account with the given email',
+  const data = accounts.find(singleAccount => singleAccount.accountNumber === Number(accountId));
+  if (!data) {
+    return res.status(404).json({
+      status: 404,
+      error: 'BAD REQUEST, The request was malformed',
     });
   }
-  const { status } = req.body;
+  const indexOfAccount = accounts.indexOf(data);
 
-  account.remove(status);
-
+  accounts.splice(indexOfAccount, 1);
   return res.status(204).json({
-    status: 'success',
-    account,
+    status: 204,
+    data,
   });
 };
-
-
-export default accounts;

@@ -6,11 +6,11 @@ export const createCreditTransaction = (req, res) => {
   } = req.body;
   if (!accountNumber || !amount || !cashier || !transactionType) {
     return res.status(400).json({
-      status: 'error',
-      message: 'All fields are required. Please fill them',
+      status: 400,
+      error: 'All fields are required. Please fill them',
     });
   }
-  const transaction = {
+  const data = {
     transactionId: `234B0${accounts.length - 5 + 1}`,
     accountNumber,
     amount,
@@ -19,26 +19,25 @@ export const createCreditTransaction = (req, res) => {
     accountBalance: 8448449,
 
   };
-  accounts.push(transaction);
+  accounts.push(data);
   return res.status(201).json({
-    status: 'success',
-    transaction,
+    status: 201,
+    data,
   });
 };
 
 export const createDebitTransaction = (req, res) => {
   const {
-    amount, cashier, transactionType,
+    amount, cashier, transactionType, accountNumber,
   } = req.body;
   const { accountId } = req.params;
-  if (!amount || !cashier || !transactionType) {
-    // console.log(transactionType, cashier, amount, accountNumber);
+  if (!accountNumber || !amount || !cashier || !transactionType) {
     return res.status(400).json({
-      status: 'error',
-      message: 'howdAll fields are required. Please fill them',
+      status: 400,
+      error: 'All fields are required. Please fill them',
     });
   }
-  const transaction = {
+  const data = {
     transactionId: `234B0${accounts.length - 5 + 1}`,
     amount,
     cashier,
@@ -47,11 +46,9 @@ export const createDebitTransaction = (req, res) => {
     accountId,
 
   };
-  accounts.push(transaction);
+  accounts.push(data);
   return res.status(201).json({
-    status: 'success',
-    transaction,
+    status: 201,
+    data,
   });
 };
-
-export default accounts;

@@ -17,14 +17,13 @@
     -->
     <header class="height-auto width-100 bg-white">
       <div class="topnav" id="myTopnav">
-        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
-        <a href="admin.html" class="pos-rel-hide rippler">Transactions</a>
-        <a href="all-user-accout.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
+        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://i.postimg.cc/j5BGxXp7/bank-svgrepo-com.png" class="gravatar"></a>
+        <a href="staff.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
         <a href="../index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
-        <a href="profile.html" class="float-r cusor">
+        <a href="staff-profile.html" class="float-r cusor">
             <i><img class="gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
         </a>
 
@@ -43,7 +42,7 @@
         </form>
       </div>
 
-      <p class="border-blue text-size-16 ">All User Accounts</p>
+      <p class="border-yellow-table h4">Tranasaction History of A/C 102839349</p>
       <div class="">
         <div class="bg-white min-width-big shadow-light mb-4">
           <!-- <h6 class="">3 Transaction(s)</h6> -->
@@ -51,43 +50,35 @@
           <table class="table width-100">
             <thead>
               <tr class="bg-light-blue text-left">
-                <th>User Name</th>
-                <th>User Id</th>
-                <th>User Role</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th>Transaction Id</th>
+                <th>Deposit</th>
+                <th>Withdrawal</th>
+                <th>Date of Transaction</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Anna Paul</td>
                 <td>010760089</td>
-                <td>Savings</td>
-                <td class="text-green">Active</td>
-                <td><button class="button-delete alert-confirm">Deactivate</button></td>
+                <td></td>
+                <td class="text-red"># 60,000</td>
+                <td>25-Mar-19</td>
               </tr>
               <tr>
-                <td>Debbie Jos</td>
-                <td>1098764532</td>
-                <td>Admin</td>
-                <td class="text-red">Inactive</td>
-                <td><button class="button-activate alert-confirm">Activate</button></td>
-
+                <td>010760089</td>
+                <td class="text-green"># 50,000</td>
+                <td></td>
+                <td>25-Mar-19</td>
               </tr>
               <tr>
-                <td>Sussan Saul</td>
                 <td>1098704532</td>
-                <td>Staff</td>
-                <td class="text-red">Inactive</td>
-                <td><button class="button-activate">Activate</button></td>
+                <td></td>
+                <td class="text-red"># 90,000</td>
+                <td>25-Jan-19</td>
               </tr>
-              
             </tbody>
           </table>
         </div>
-        <div><a href="create-user.html" class="float-r"><button class="button button-info" title="Create a new Account"><i class="fa fa-plus">Create  User</i></button></a></div>
-      
-
+        <div><a href="staff-create-transaction.html" class="float-r"><button class="button button-info" title="Create a new Emplyee Account"><i class="fa fa-plus">Create Transaction</i></button></a></div>
       </div>
       
     </section>

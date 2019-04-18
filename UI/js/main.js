@@ -1,19 +1,37 @@
 /* 
 ==================================> Confirm Delete
  */
+// Get the modal
+const modal = document.getElementById('myModal');
 
+// Get the button that opens the modal
+const btn = document.getElementById("deleteBtn");
 
-const thisButton = document.querySelector('.alert-confirm');
-const confirmDelete = () => {
-  confirm("Are you sure you want to proceed?");
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick =() => {
+  modal.style.display = "block";
 }
-thisButton.addEventListener('click', confirmDelete);
 
 
+// When the user clicks on <span> (x), close the modal
+span.onclick = () => {
+  modal.style.display = "none";  
+}
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = (event) => {
+    if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  
 /* 
 ==================================> Responsive top nav
 */
+
 
 function displayToggle() {
   var x = document.getElementById("myTopnav");
@@ -24,29 +42,3 @@ function displayToggle() {
   }
 }
 
-/* 
-==================================> Ripple Effect on buttons
- */
-const rippler = document.querySelectorAll('.rippler');
-Array.prototype.forEach.call(rippler, function(b){
-  b.addEventListener('click', createRipple);
-})
-
-function createRipple(e)
-{
-  if(this.getElementsByClassName('ripple').length > 0)
-    {
-      this.removeChild(this.childNodes[1]);
-    }
-  
-  let circle = document.createElement('div');
-  this.appendChild(circle);
-  
-  let d = Math.max(this.clientWidth, this.clientHeight);
-  circle.style.width = circle.style.height = d + 'px';
-  
-  circle.style.left = e.clientX - this.offsetLeft - d / 2 + 'px';
-  circle.style.top = e.clientY - this.offsetTop - d / 2 + 'px';
-  
-  circle.classList.add('ripple');
-}

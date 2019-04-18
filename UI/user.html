@@ -17,14 +17,13 @@
     -->
     <header class="height-auto width-100  bg-white">
       <div class="topnav" id="myTopnav">
-        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
-        <a href="user.html" class="pos-rel-hide rippler text-info border-yellow">Transactions</a>
-        <a href="user-account.html" class="pos-rel-hide rippler text-info">Accounts</a>
+        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://i.postimg.cc/j5BGxXp7/bank-svgrepo-com.png" class="gravatar"></a>
+        <a href="user.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="../index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
-        <a href="profile.html" class="float-r cusor">
+        <a href="/index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
+        <a href="user-profile.html" class="float-r cusor">
             <i><img class="gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
         </a>
 
@@ -36,7 +35,6 @@
     -->
     <section class="min-height">
       <div class="overflow-none width-90 position-x-center">
-
       <div>
         <form action="">
           <input type="text" class="form-control placeholder-muted mt-4  border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account number or amount">
@@ -45,40 +43,45 @@
       </div>
 
       
-      <p class="border-yellow-table h4">Transactions by PRAISE BROWN</p>
+      <p class="border-yellow-table h4">Accounts of Praise Brownson</p>
         <div class="bg-white">
-          <table>
+          <table class="table width-100">
             <thead>
               <tr class="bg-light-blue text-left">
                 <th>Account Number</th>
-                <th>Deposit</th>
-                <th>Withdrawal</th>
-                <th>Date of Transaction</th>
+                <th>Type</th>
+                <th>Balance</th>
+                <th>Date Created</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>010760089</td>
-                <td></td>
-                <td class="text-red"># 60,000</td>
+                <td>Current</td>
+                <td># 60,000</td>
                 <td>25-Mar-19</td>
+                <td class="button bg-white"><a href="user-account-transaction.html">View</a></td>
               </tr>
               <tr>
                 <td>010760089</td>
-                <td class="text-green"># 50,000</td>
-                <td></td>
+                <td>Savings</td>
+                <td># 60,000</td>
                 <td>25-Mar-19</td>
+                <td class="button bg-white"><a href="user-account-transaction.html">View</a></td>
               </tr>
               <tr>
                 <td>1098704532</td>
-                <td></td>
-                <td class="text-red"># 90,000</td>
+                <td>Current</td>
+                <td># 90,000</td>
                 <td>25-Jan-19</td>
+                <td class="button bg-white"><a href="user-account-transaction.html">View</a></td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
+        <div><a href="user-create-account.html" class="float-r mt-4"><button class="button button-info" title="Create a new Account"><i class="fa fa-plus">Create  Account</i></button></a></div>
     </section>
   
     <!--

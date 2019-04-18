@@ -34,51 +34,30 @@
       ======================================= Transactions User
     -->
     <section class="min-height">
-      <div class="overflow-none width-90 position-x-center">
-
-      <div>
-        <form action="">
-          <input type="text" class="form-control placeholder-muted mt-4  border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account number or amount">
-          <button type="submit" class="search-icon shadow"><i class="fa fa-search"></i></button>
+      <div class="overflow-none position-x-center overflow-none mt-4 bg-white profile-card  shadow-light">
+        <form action="" method="">
+          <!-- Title -->
+          <div class="border-yellow-table">
+            <div class="text-title inline-block">Personal Information</div>
+          </div>
+          <!-- First Name -->
+          <label class="font-weight-bold form-label mt-4">Full Name</label>
+          <input type="text" class="form-control mb-4 width-100 bg-gray width-100" name="first_name" value="Praise Brownson">
+          <!-- Laste Name -->
+          <label class="font-weight-bold form-label">Account Number</label>
+          <input type="number" class="form-control mb-4 width-100 bg-gray" name="account_number" value="0107600456" disabled>
+          <!-- Email Address -->
+          <label class="font-weight-bold form-label">Email</label>
+          <input type="text" class="form-control mb-4 width-100 bg-gray" name="last_name" value="praise@yahoo.co.uk">
+          <!-- File Address -->
+          <div>
+            <i><img class="big-gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
+            <input type="file">
+          </div>
+          
+          <!-- Submit button -->
+          <button class="button button-info my-4 pos-rel-hide rippler float-r" type="submit">Save</button>
         </form>
-      </div>
-
-      
-      <p class="border-yellow-table h4">Account Number: <b>9348503</b></p>
-        <div class="bg-white">
-          <table>
-            <thead>
-              <tr class="bg-light-blue text-left">
-                <th>Transaction Id</th>
-                <th>Deposit</th>
-                <th>Withdrawal</th>
-                <th>Date of Transaction</th>
-                <th>View</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>010760089</td>
-                <td></td>
-                <td class="text-red"># 60,000</td>
-                <td>25-Mar-19</td>
-                <td><button class="button"><a href="user-specific-transaction.html">View</a></button></td>
-              </tr>
-              <tr>
-                <td>010760089</td>
-                <td class="text-green"># 50,000</td>
-                <td></td>
-                <td>25-Mar-19</td>
-              </tr>
-              <tr>
-                <td>1098704532</td>
-                <td></td>
-                <td class="text-red"># 90,000</td>
-                <td>25-Jan-19</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
     </section>
   

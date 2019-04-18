@@ -18,8 +18,8 @@
     <header class="height-auto width-100 bg-white">
       <div class="topnav" id="myTopnav">
         <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://i.postimg.cc/j5BGxXp7/bank-svgrepo-com.png" class="gravatar"></a>
-        <a href="admin.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
-        <a href="admin-all-user.html" class="pos-rel-hide rippler">Users</a>
+        <a href="admin.html" class="pos-rel-hide rippler">Accounts</a>
+          <a href="admin-all-user.html" class="pos-rel-hide rippler text-info border-yellow">Users</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
@@ -43,7 +43,7 @@
         </form>
       </div>
 
-      <p class="border-yellow-table h4">All Bank Accounts</p>
+      <p class="border-yellow-table h4">All Users</p>
       <div class="">
         <div class="bg-white min-width-big shadow-light mb-4">
           <!-- <h6 class="">3 Transaction(s)</h6> -->
@@ -51,47 +51,35 @@
           <table class="table width-100">
             <thead>
               <tr class="bg-light-blue text-left">
-                <th>Account Name</th>
-                <th>Account Number</th>
-                <th>Account Type</th>
-                <th>Status</th>
-                <th>Action</th>
-                <th id="deleteBtn">Delete</th>
-                <th></th>
+                <th>User Name</th>
+                <th>User Id</th>
+                <th>Role</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Anna Paul</td>
                 <td>010760089</td>
-                <td>Savings</td>
-                <td class="text-green">Active</td>
-                <td><button class="button-delete alert-confirm">Deactivate</button></td>
-                <td><i class="fa fa-trash text-delete" aria-hidden="true"></i></td>
-                <td class="button button-light"><a href="admin-single-account.html">View</a></td>
+                <td>Admin</td>
               </tr>
               <tr>
                 <td>Debbie Jos</td>
                 <td>1098764532</td>
-                <td>Savings</td>
-                <td class="text-red">Inactive</td>
-                <td><button class="button-activate alert-confirm">Activate</button></td>
-                <td><i class="fa fa-trash text-delete" aria-hidden="true"></i></td>
-                <td class="button button-light"><a href="admin-single-account.html">View</a></td>
+                <td>Admin</td>
               </tr>
               <tr>
                 <td>Sussan Saul</td>
                 <td>1098704532</td>
-                <td>Current</td>
-                <td class="text-red">Inactive</td>
-                <td><button class="button-activate">Activate</button></td>
-                <td><i class="fa fa-trash text-delete" aria-hidden="true"></i></td>
-                <td class="button button-light"><a href="admin-single-account.html">View</a></td>
+                <td>Staff</td>
               </tr>
               
             </tbody>
           </table>
         </div>
+        <div><a href="admin-create-user.html" class="float-r"><button class="button button-info" title="Create a new Emplyee Account"><i class="fa fa-plus">Create  User</i></button></a></div>
+        <!-- Modal content -->
+
+
       </div>
       
     </section>

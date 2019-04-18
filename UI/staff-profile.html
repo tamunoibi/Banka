@@ -15,21 +15,22 @@
     <!--
       ======================================= Header
     -->
-    <header class="height-auto width-100  bg-white">
+    <header class="height-auto width-100 bg-white">
       <div class="topnav" id="myTopnav">
-        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
-        <a href="user.html" class="pos-rel-hide rippler text-info">Transactions</a>
-        <a href="user-account.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
+        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://i.postimg.cc/j5BGxXp7/bank-svgrepo-com.png" class="gravatar"></a>
+        <a href="staff.html" class="pos-rel-hide rippler">Accounts</a>
+          <a href="staff-all-user.html" class="pos-rel-hide rippler text-info">Users</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
         <a href="../index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
-        <a href="profile.html" class="float-r cusor">
+        <a href="staff-profile.html" class="float-r cusor">
             <i><img class="gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
         </a>
 
       </div>
     </header>
+
 
     <!--
       ======================================= Transactions User
@@ -41,15 +42,19 @@
           <div class="border-yellow-table">
             <div class="text-title inline-block">Personal Information</div>
           </div>
-          <!-- First Name -->
+          <!-- Full Name -->
           <label class="font-weight-bold form-label mt-4">Full Name</label>
-          <input type="text" class="form-control mb-4 width-100 bg-gray width-100" name="first_name" value="Praise Brownson">
-          <!-- Laste Name -->
-          <label class="font-weight-bold form-label">Account Number</label>
+          <input type="text" class="form-control mb-4 width-100 bg-gray width-100" name="first_name" value="Praise Brownson" disabled>
+          <!-- User Id -->
+          <label class="font-weight-bold form-label">User Id</label>
           <input type="number" class="form-control mb-4 width-100 bg-gray" name="account_number" value="0107600456" disabled>
           <!-- Email Address -->
           <label class="font-weight-bold form-label">Email</label>
-          <input type="text" class="form-control mb-4 width-100 bg-gray" name="last_name" value="praise@yahoo.co.uk">
+          <input type="text" class="form-control mb-4 width-100 bg-gray" name="last_name" value="praise@yahoo.co.uk"  disabled>
+          <!-- Email Address -->
+          <label class="font-weight-bold form-label">Role</label>
+          <input type="text" class="form-control mb-4 width-100 bg-gray" name="last_name" value="Staff"  disabled>
+          
           <!-- File Address -->
           <div>
             <i><img class="big-gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>

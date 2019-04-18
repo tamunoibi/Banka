@@ -312,7 +312,7 @@ table>tbody>tr:hover {
   cursor: pointer;
 }
 .button-activate {
-  background-color: #676AE6;
+  background-color: #51ce9b;
   color: whitesmoke;
   border: none;
   padding: 6px;
@@ -323,7 +323,7 @@ table>tbody>tr:hover {
 .button-activate:hover,
 .button-activate:focus {
   opacity: 1;
-  background-color: #676AE6;
+  background-color: #51ce9b;
   cursor: pointer;
 }
 
@@ -388,6 +388,9 @@ Contains:
 /* For Text Colors */
 .text-gray {
   color: #1e394e;
+}
+.text-delete {
+  color: #dc3545;
 }
 .text-info {
   color: #FCC604;

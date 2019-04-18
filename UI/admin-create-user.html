@@ -15,16 +15,16 @@
     <!--
       ======================================= Header
     -->
-    <header class="height-auto width-100  bg-white">
+    <header class="height-auto width-100 bg-white">
       <div class="topnav" id="myTopnav">
-        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://dummyimage.com/600x400/ffffff/1e3944&text=Brok" class="gravatar"></a>
-        <a href="admin.html" class="pos-rel-hide rippler">Transactions</a>
-        <a class="pos-rel-hide rippler">Accounts</a>
+        <a href="../index.html" class="active pos-rel-hide rippler"><img src="https://i.postimg.cc/j5BGxXp7/bank-svgrepo-com.png" class="gravatar"></a>
+        <a href="admin.html" class="pos-rel-hide rippler text-info border-yellow">Accounts</a>
+        <a href="admin-all-user.html" class="pos-rel-hide rippler">Users</a>
         <a class="icon" onclick="displayToggle()">
           <i class="fa fa-bars"></i>
         </a>
         <a href="../index.html" class="pos-rel-hide rippler text-info float-r"><button class="button button-light">Logout</button></a>
-        <a href="profile.html" class="float-r cusor">
+        <a href="admin-profile.html" class="float-r cusor">
             <i><img class="gravatar" src="https://i.postimg.cc/FsG8K2Wf/profile.jpg"></i>
         </a>
 
@@ -34,10 +34,7 @@
     <!--
       ======================================= Transactions User
     -->
-    <main class="container min-height">
-      <form action="">
-        <input type="text" class="form-control placeholder-muted mt-4 ml-1 border-none shadow bg-white width-50 inline-block" placeholder="search transactions by account name, account number or amount">
-      </form>
+    <main class="min-height">
       <section class="mt-4 bg-white profile-card  shadow-light">
 
         <form action="" method="">
@@ -47,21 +44,24 @@
           </div>
           <!-- User Role -->
           <label class="font-weight-bold form-label mt-4">User's Role</label>
-          <!-- <input type="text" class="form-control mb-4 width-50 bg-gray" name="first_name"> -->
-          <select class="form-control mb-4 width-50 bg-gray" name="role">
+          <!-- <input type="text" class="form-control mb-4 width-100 bg-gray" name="first_name"> -->
+          <select class="form-control mb-4 width-100 bg-gray" name="role">
             <option value="">Admin</option>
             <option value="">Staff</option>
           </select>
           <!-- Email -->
           <label class="font-weight-bold form-label">Users Email</label>
-          <input type="email" class="form-control mb-4 width-50 bg-gray" name="number" placeholder="">
+          <input type="email" class="form-control mb-4 width-100 bg-gray" name="number" placeholder="">
+          <!-- Password -->
+          <label class="font-weight-bold form-label">Users Password</label>
+          <input type="password" class="form-control mb-4 width-100 bg-gray" name="number" placeholder="">
           <!-- Emplyee Id -->
           <label class="font-weight-bold form-label">Users Full Name</label>
-          <input type="text" class="form-control mb-4 width-50 bg-gray" name="residential_address" placeholder="">
+          <input type="text" class="form-control mb-4 width-100 bg-gray" name="residential_address" placeholder="">
 
           
           <!-- Submit button -->
-          <button class="button button-save my-4 pos-rel-hide rippler" type="submit">Create</button>
+          <button class="button button-info my-4 pos-rel-hide rippler" type="submit">Create</button>
         </form>
          
   

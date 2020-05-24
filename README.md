@@ -17,7 +17,7 @@ deposit money.
 
 ## UI Templates
 
-UI Template for the application can be found here [Github pages](https://girlking.github.io/Banka/).
+UI Template for the application can be found here [Github pages](https://taprekuma.github.io/Banka/).
 
 <!-- ## Heroku App -->
 
